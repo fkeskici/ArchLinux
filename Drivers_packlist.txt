@@ -1,0 +1,5 @@
+nvidia-lts
+nvidia-utils
+nvidia-settings
+cups
+cups-pdf
