@@ -18,6 +18,9 @@ pipewire-alsa
 pipewire-pulse
 pipewire-jack
 alsa-utils
+gst-plugin-pipewire
+sof-firmware
+wireplumber
 packagekit-qt5
 grub
 efibootmgr
