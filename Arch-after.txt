@@ -30,7 +30,6 @@ gstreamer
 gufw
 gwenview
 htop
-hypnotix
 impression
 jq
 kcalc
@@ -40,7 +39,6 @@ konsole
 kwrite
 less
 libreoffice-fresh
-localsend
 locate
 lsd
 meld
@@ -49,9 +47,7 @@ neofetch
 networkmanager
 nvidia
 nvidia-utils
-ntfs-3g
 okular
-os-prober
 p7zip
 pacman-contrib
 packagekit-qt5
@@ -61,7 +57,6 @@ pipewire-jack
 pipewire-pulse
 plasma-meta
 plasma-workspace
-preload
 power-profiles-daemon
 python
 python-pip
@@ -78,7 +73,6 @@ tesseract-data-tur
 thunderbird
 tk
 ttf-jetbrains-mono
-ttf-ms-fonts
 unrar
 unzip
 vim

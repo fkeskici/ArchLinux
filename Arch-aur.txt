@@ -1,3 +1,9 @@
 brave-bin
+hypnotix
+localsend
+ntfs-3g
+os-prober
+preload
+ttf-ms-fonts
 upscayl
 whatsapp-for-linux
