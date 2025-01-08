@@ -35,7 +35,6 @@ jq
 kcalc
 kdeconnect
 kio-admin
-krusader
 konsole
 kwrite
 less
@@ -74,6 +73,7 @@ tesseract-data-tur
 thunderbird
 tk
 ttf-jetbrains-mono
+ttf-liberation
 unrar
 unzip
 vim
