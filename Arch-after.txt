@@ -14,7 +14,6 @@ elisa
 ffmpegthumbnailer
 filelight
 filezilla
-firefox
 fish
 flatpak
 fzf

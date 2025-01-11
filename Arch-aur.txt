@@ -7,3 +7,4 @@ preload
 ttf-ms-fonts
 upscayl
 whatsapp-for-linux
+zen-browser-bin
