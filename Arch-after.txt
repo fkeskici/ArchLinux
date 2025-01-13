@@ -16,6 +16,7 @@ filelight
 filezilla
 fish
 flatpak
+fuse
 fzf
 git
 gimp
