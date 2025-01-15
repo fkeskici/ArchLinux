@@ -31,6 +31,7 @@ gufw
 gwenview
 htop
 impression
+intel-ucode
 jq
 kcalc
 kdeconnect
@@ -39,6 +40,7 @@ konsole
 kwrite
 less
 libreoffice-fresh
+linux-headers
 locate
 lsd
 meld
