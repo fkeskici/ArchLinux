@@ -33,6 +33,7 @@ htop
 impression
 intel-ucode
 jq
+kamoso
 kcalc
 kdeconnect
 kio-admin
