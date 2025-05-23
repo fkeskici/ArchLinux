@@ -36,7 +36,6 @@ jq
 kamoso
 kcalc
 kdeconnect
-kio-admin
 konsole
 kwrite
 less
