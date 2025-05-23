@@ -36,6 +36,7 @@ jq
 kamoso
 kcalc
 kdeconnect
+kdialog
 konsole
 kwrite
 less
