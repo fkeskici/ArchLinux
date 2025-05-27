@@ -38,6 +38,7 @@ kamoso
 kcalc
 kdeconnect
 kdialog
+kio-admin
 konsole
 kwrite
 less
