@@ -12,6 +12,7 @@ cups-pdf
 curl
 dolphin
 elisa
+exa
 ffmpegthumbnailer
 filelight
 filezilla
@@ -45,7 +46,6 @@ less
 libreoffice-fresh
 linux-headers
 locate
-lsd
 meld
 mpv
 neofetch
