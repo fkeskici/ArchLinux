@@ -13,6 +13,7 @@ curl
 dolphin
 elisa
 exa
+fastfetch
 ffmpegthumbnailer
 filelight
 filezilla
@@ -48,7 +49,6 @@ linux-headers
 locate
 meld
 mpv
-neofetch
 networkmanager
 nvidia
 nvidia-utils
