@@ -1,4 +1,4 @@
-brave-bin
+floorp
 hypnotix
 localsend
 ntfs-3g
@@ -7,4 +7,3 @@ preload
 ttf-ms-fonts
 upscayl
 whatsapp-for-linux
-zen-browser-bin

@@ -50,8 +50,6 @@ locate
 meld
 mpv
 networkmanager
-nvidia
-nvidia-utils
 okular
 p7zip
 pacman-contrib
