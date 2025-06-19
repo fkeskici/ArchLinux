@@ -1,0 +1,4 @@
+preload
+ttf-ms-fonts
+upscayl-bin
+whatsapp-for-linux

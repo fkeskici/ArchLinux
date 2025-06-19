@@ -1,0 +1,5 @@
+[Unit]
+Description=Gündüz modu: %80 parlaklık
+
+[Service]
+ExecStart=%h/.local/bin/brightness-set.sh 80

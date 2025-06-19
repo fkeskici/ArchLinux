@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+[ "$1" = 10 ] && percent="1" || percent="0.$1"
+[ "$2" = night ] && night_mode=true || night_mode=false
+
+# Parlaklık ayarı
+brightnessctl set "$1%"
+
+# Night Light ayarı
+kwinrc="$HOME/.config/kwinrc"
+
+# [NightColor] bölümünü düzenle
+if grep -q "^\[NightColor\]" "$kwinrc"; then
+    sed -i "/^\[NightColor\]/,/^\[/ s/^Active=.*/Active=$night_mode/" "$kwinrc"
+else
+    echo -e "\n[NightColor]\nActive=$night_mode" >> "$kwinrc"
+fi
+
+# KWin ayarlarını yeniden yükle
+qdbus org.kde.KWin /KWin reconfigure
+
+# Bildirim
+notify-send -t 3000 -h string:bgcolor:#ebcb8b "Parlaklık %$1 – Night Mode: $2"

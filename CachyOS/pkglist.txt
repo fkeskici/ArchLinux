@@ -1,0 +1,16 @@
+brightnessctl
+czkawka-gui
+easyeffects
+floorp-bin
+fuse2
+hypnotix
+joplin
+libreoffice-fresh
+localsend
+ntfs-3g
+okular
+python-pip
+rclone
+thunderbird
+tk
+yazi

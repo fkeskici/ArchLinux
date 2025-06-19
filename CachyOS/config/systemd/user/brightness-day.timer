@@ -1,0 +1,9 @@
+[Unit]
+Description=Sabah 06:30'de gündüz modunu başlat
+
+[Timer]
+OnCalendar=*-*-* 06:30:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,5 @@
+[Unit]
+Description=Gece modu: %40 parlaklık
+
+[Service]
+ExecStart=%h/.local/bin/brightness-set.sh 40
