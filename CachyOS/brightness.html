@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopyalanabilir Kodlar (Tek Dosya)</title>
+
+    <style>
+        /* styles.css içeriği buraya gelecek */
+        .code-block {
+            position: relative;
+            background-color: #272822;
+            color: #f8f8f2;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        .code-block pre {
+            margin: 0;
+        }
+
+        .code-block code {
+            display: block;
+            white-space: pre-wrap;
+            word-break: break-all;
+        }
+
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .code-block:hover .copy-button {
+            opacity: 1;
+        }
+
+        .copy-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Güncellenmiş brightness-set.sh Scripti</h1>
+    <div class="code-block">
+        <pre><code class="language-bash">
+#!/usr/bin/env bash
+
+# Parlaklık ayarı
+if ! brightnessctl set "$1%"; then
+    # Hata durumunda bildirim gönder
+    notify-send -t 5000 -u critical "Parlaklık ayarlanırken bir hata oluştu!" "Lütfen 'brightnessctl' komutunun doğru çalıştığından ve izinlerinizin olduğundan emin olun."
+else
+# Başarılı bildirim
+    notify-send -t 3000 -h string:bgcolor:#ebcb8b "Parlaklık %$1 ayarlandı."
+fi
+        </code></pre>
+    </div>
+
+    <h2>Yapılan değişiklikler</h2>
+    <ul>
+        <li>`[ "$1" = 10 ] && percent="1" || percent="0.$1"` satırı artık yok.</li>
+        <li>`brightnessctl set` komutunun başarılı olup olmadığını kontrol eden bir if bloğu eklendi.</li>
+        <li>Eğer bir hata olursa, kritik seviyede bir bildirim gönderilir. Bu, sorunu fark etmeni kolaylaştırır.</li>
+    </ul>
+
+    <h1>Güncellenmiş Servis Dosyaları</h1>
+
+    <h2>Gece Modu Servisi (brightness-night.service)</h2>
+    <div class="code-block">
+        <pre><code class="language-ini">
+[Unit]
+Description=Gece modu: %40 parlaklık
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/brightness-set.sh 40
+
+[Install]
+WantedBy=default.target
+        </code></pre>
+    </div>
+
+    <h2>Gündüz Modu Servisi (brightness-day.service)</h2>
+    <div class="code-block">
+        <pre><code class="language-ini">
+[Unit]
+Description=Gündüz modu: %80 parlaklık
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/brightness-set.sh 80
+
+[Install]
+WantedBy=default.target
+        </code></pre>
+    </div>
+
+    <h1>Timer Dosyaları (Değişiklik Yok)</h1>
+
+    <h2>Gece Modu Timer'ı (brightness-night.timer)</h2>
+    <div class="code-block">
+        <pre><code class="language-ini">
+[Unit]
+Description=Gece 21:00'de gece modunu başlat
+
+[Timer]
+OnCalendar=*-*-* 21:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+        </code></pre>
+    </div>
+
+    <h2>Gündüz Modu Timer'ı (brightness-day.timer)</h2>
+    <div class="code-block">
+        <pre><code class="language-ini">
+[Unit]
+Description=Sabah 06:30'de gündüz modunu başlat
+
+[Timer]
+OnCalendar=*-*-* 06:30:00
+Persistent=true
+
+[Install]
+WantedBy=timers.targe
+        </code></pre>
+    </div>
+
+    <h1>Kurulum Adımları</h1>
+    <p>Yukarıdaki güncellenmiş scripti <b>$HOME/.local/bin/brightness-set.sh</b> yoluna kaydedin ve çalıştırılabilir izinlerini verin:</p>
+    <div class="code-block">
+        <pre><code class="language-bash">
+chmod +x ~/.local/bin/brightness-set.sh
+        </code></pre>
+    </div>
+
+    <p><b>Güncellenmiş servis dosyalarını</b> (<b>brightness-night.service</b> ve <b>brightness-day.service</b> adlarıyla) <b>$HOME/.config/systemd/user/</b> dizinine kaydedin.</p>
+
+    <p><b>Timer dosyalarını</b> (<b>brightness-night.timer</b> ve <b>brightness-day.timer</b> adlarıyla) <b>$HOME/.config/systemd/user/</b> dizinine kaydedin.</p>
+
+    <p><b>systemd'ye yeni dosyaları tanıtmak için:</b></p>
+    <div class="code-block">
+        <pre><code class="language-bash">
+systemctl --user daemon-reload
+        </code></pre>
+    </div>
+
+    <p><b>Timer'ları etkinleştir ve başlat:</b></p>
+    <div class="code-block">
+        <pre><code class="language-bash">
+systemctl --user enable --now brightness-night.timer
+systemctl --user enable --now brightness-day.timer
+        </code></pre>
+    </div>
+
+    <script>
+        /* script.js içeriği buraya gelecek */
+        document.addEventListener('DOMContentLoaded', () => {
+            const codeBlocks = document.querySelectorAll('.code-block');
+
+            codeBlocks.forEach(block => {
+                const preElement = block.querySelector('pre');
+                if (!preElement) return;
+
+                const copyButton = document.createElement('button');
+                copyButton.className = 'copy-button';
+                copyButton.textContent = 'Kopyala';
+
+                block.appendChild(copyButton);
+
+                copyButton.addEventListener('click', () => {
+                    const codeToCopy = preElement.textContent;
+
+                    navigator.clipboard.writeText(codeToCopy)
+                        .then(() => {
+                            copyButton.textContent = 'Kopyalandı!';
+                            setTimeout(() => {
+                                copyButton.textContent = 'Kopyala';
+                            }, 2000);
+                        })
+                        .catch(err => {
+                            console.error('Kopyalama başarısız:', err);
+                            alert('Kopyalama başarısız oldu. Lütfen manuel olarak kopyalayın.');
+                        });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -2,4 +2,8 @@
 Description=Gece modu: %40 parlaklık
 
 [Service]
+Type=oneshot
 ExecStart=%h/.local/bin/brightness-set.sh 40
+
+[Install]
+WantedBy=default.target
