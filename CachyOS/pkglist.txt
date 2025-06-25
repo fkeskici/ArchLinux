@@ -5,6 +5,7 @@ floorp-bin
 fuse2
 hypnotix
 joplin
+kolourpaint
 libreoffice-fresh
 localsend
 ntfs-3g
