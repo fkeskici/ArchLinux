@@ -12,6 +12,9 @@ ntfs-3g
 okular
 python-pip
 rclone
+tesseract
+tesseract-data-eng
+tesseract-data-tur
 thunderbird
 tk
 yazi
