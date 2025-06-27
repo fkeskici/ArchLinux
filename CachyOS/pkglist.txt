@@ -2,7 +2,7 @@ brightnessctl
 czkawka-gui
 easyeffects
 floorp-bin
-fuse2
+gimp
 hypnotix
 joplin-desktop
 kolourpaint
