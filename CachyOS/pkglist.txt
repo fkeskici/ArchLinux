@@ -11,6 +11,7 @@ ntfs-3g
 okular
 python-pip
 rclone
+switcheroo
 tesseract
 tesseract-data-eng
 tesseract-data-tur
