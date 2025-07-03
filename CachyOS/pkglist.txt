@@ -1,4 +1,5 @@
 brightnessctl
+converseen
 czkawka-gui
 easyeffects
 gimp
@@ -11,7 +12,7 @@ ntfs-3g
 okular
 python-pip
 rclone
-switcheroo
+resources
 tesseract
 tesseract-data-eng
 tesseract-data-tur
