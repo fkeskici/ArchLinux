@@ -2,6 +2,7 @@ brightnessctl
 converseen
 czkawka-gui
 easyeffects
+floorp-bin
 gimp
 hypnotix
 joplin-desktop
@@ -13,10 +14,10 @@ okular
 python-pip
 rclone
 resources
+speech-dispatcher
 tesseract
 tesseract-data-eng
 tesseract-data-tur
 thunderbird
 tk
 yazi
-zen-browser-bin
