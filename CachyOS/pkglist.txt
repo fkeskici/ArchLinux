@@ -6,6 +6,7 @@ floorp-bin
 gimp
 hypnotix
 joplin-desktop
+kjournald
 kolourpaint
 libreoffice-fresh
 localsend
@@ -20,4 +21,3 @@ tesseract-data-eng
 tesseract-data-tur
 thunderbird
 tk
-yazi
