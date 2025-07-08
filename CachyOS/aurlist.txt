@@ -1,5 +1,4 @@
 preload
-superfile-bin
 ttf-ms-fonts
 upscayl-bin
 whatsapp-for-linux
