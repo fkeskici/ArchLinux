@@ -1,8 +1,6 @@
 [Unit]
-Description=Weekly Personal Backup
-After=default.target
+Description=Backup Service
 
 [Service]
 Type=oneshot
-ExecStart=%h/scripts/backup.sh
-WorkingDirectory=%h
+ExecStart=/bin/bash %h/scripts/backup.sh

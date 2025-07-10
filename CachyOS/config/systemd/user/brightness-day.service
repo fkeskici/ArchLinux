@@ -1,5 +1,5 @@
 [Unit]
-Description=Gündüz modu: %80 parlaklık
+Description=Gündüz modu: yüzde 80 parlaklık
 
 [Service]
 Type=oneshot

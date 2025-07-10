@@ -1,5 +1,5 @@
 [Unit]
-Description=Gece modu: %40 parlaklık
+Description=Gece modu: yüzde 40 parlaklık
 
 [Service]
 Type=oneshot

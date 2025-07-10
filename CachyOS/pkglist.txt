@@ -14,7 +14,6 @@ ntfs-3g
 okular
 python-pip
 rclone
-resources
 speech-dispatcher
 tesseract
 tesseract-data-eng
