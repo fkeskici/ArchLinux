@@ -12,12 +12,12 @@ libreoffice-fresh
 localsend
 ntfs-3g
 okular
-python-pip
+# python-pip
 rclone
 speech-dispatcher
 tesseract
 tesseract-data-eng
 tesseract-data-tur
 thunderbird
-tk
+# tk
 yazi

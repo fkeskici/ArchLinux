@@ -16,3 +16,4 @@ Zorunlu kurulum yapma (varsa): Eğer tüm paketleri tekrar yüklemek istiyorsan 
 
 xargs -a Arch-after.txt sudo pacman -S
 
+grep -v '^#' Arch-after.txt | xargs sudo pacman -S --needed
