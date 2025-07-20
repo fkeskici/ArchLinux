@@ -20,4 +20,5 @@ tesseract-data-eng
 tesseract-data-tur
 thunderbird
 # tk
+xpad
 yazi
