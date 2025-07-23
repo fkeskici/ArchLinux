@@ -1,13 +1,17 @@
+bc
 brightnessctl
+chromium
 converseen
 czkawka-gui
 easyeffects
 floorp-bin
+ghostty
 gimp
 hypnotix
 joplin-desktop
-kjournald
+# kjournald
 kolourpaint
+kvantum
 libreoffice-fresh
 localsend
 ntfs-3g
