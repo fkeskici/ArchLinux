@@ -8,15 +8,18 @@ floorp-bin
 ghostty
 gimp
 hypnotix
+jalv
 joplin-desktop
 # kjournald
 kolourpaint
 kvantum
 libreoffice-fresh
 localsend
+lsp-plugins-lv2
 ntfs-3g
 okular
 # python-pip
+# plasma-applet-window-buttons
 rclone
 speech-dispatcher
 tesseract
