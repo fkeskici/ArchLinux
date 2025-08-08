@@ -1,7 +1,7 @@
 bc
 brightnessctl
 chromium
-converseen
+# converseen
 czkawka-gui
 easyeffects
 floorp-bin
@@ -21,6 +21,7 @@ okular
 # python-pip
 rclone
 speech-dispatcher
+switcheroo
 tesseract
 tesseract-data-eng
 tesseract-data-tur
