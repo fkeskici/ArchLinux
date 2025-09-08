@@ -1,6 +1,5 @@
 bc
 brightnessctl
-chromium
 converseen
 czkawka-gui
 easyeffects
@@ -27,5 +26,7 @@ tesseract-data-eng
 tesseract-data-tur
 thunderbird
 # tk
+vivaldi
 xpad
 yazi
+zoxide
