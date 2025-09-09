@@ -1,3 +1,4 @@
+ferdium-bin
 floorp
 hypnotix
 localsend
@@ -6,4 +7,3 @@ os-prober
 preload
 ttf-ms-fonts
 upscayl
-whatsapp-for-linux

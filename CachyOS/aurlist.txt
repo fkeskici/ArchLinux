@@ -1,4 +1,4 @@
-preload
+ferdium-bin
+# preload
 ttf-ms-fonts
 upscayl-bin
-whatsapp-for-linux
