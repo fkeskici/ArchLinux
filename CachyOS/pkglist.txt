@@ -9,6 +9,7 @@ gimp
 hypnotix
 jalv
 joplin-desktop
+kdeconnect
 # kjournald
 kolourpaint
 kvantum

@@ -1,4 +1,5 @@
 ferdium-bin
 # preload
+stacer-bin
 ttf-ms-fonts
 upscayl-bin
