@@ -3,7 +3,7 @@ brightnessctl
 converseen
 czkawka-gui
 easyeffects
-floorp-bin
+# floorp-bin
 ghostty
 gimp
 hypnotix

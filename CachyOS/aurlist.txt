@@ -1,4 +1,5 @@
 ferdium-bin
+helium-browser-bin
 # preload
 stacer-bin
 ttf-ms-fonts
