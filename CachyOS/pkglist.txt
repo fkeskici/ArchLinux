@@ -1,17 +1,18 @@
-bc
+brave
 brightnessctl
 converseen
 czkawka-gui
 easyeffects
 # floorp-bin
-ghostty
+# ghostty
 gimp
 hypnotix
 jalv
 joplin-desktop
 kdeconnect
-# kjournald
+kitty
 kolourpaint
+krusader
 kvantum
 libreoffice-fresh
 localsend
@@ -27,7 +28,6 @@ tesseract-data-eng
 tesseract-data-tur
 thunderbird
 # tk
-vivaldi
 xpad
 yazi
 zoxide
