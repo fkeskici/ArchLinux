@@ -1,4 +1,3 @@
-brave
 brightnessctl
 converseen
 czkawka-gui
@@ -28,6 +27,7 @@ tesseract-data-eng
 tesseract-data-tur
 thunderbird
 # tk
+vivaldi
 xpad
 yazi
 zoxide
